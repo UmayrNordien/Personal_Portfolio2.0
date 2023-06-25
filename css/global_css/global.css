@@ -1,0 +1,60 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); /* put in body so it applies to every section */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  list-style: none;
+
+  text-decoration: none;
+
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+
+  font-family: "Poppins", sans-serif;
+  cursor: cell;
+}
+
+:root {
+  /* zesty pastal colors */
+  --primary-color: #adadee;
+  --secondary-color: #dfb6ee;
+  --bg-color: #fcfcfc;
+  
+  --text-color: #353535;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  height: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color); /* minimalism */
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+
+section {
+  /* padding to all sections, clean minimalist look */
+  padding-top: 50px;
+  padding-right: 10%;
+  padding-bottom: 50px;
+  padding-left: 10%;
+}
+
+/* applying colors to section tags */
+section {
+  color: var(--text-color)
+}
