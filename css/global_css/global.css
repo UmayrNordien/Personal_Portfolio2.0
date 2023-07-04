@@ -45,6 +45,11 @@
   background: var(--secondary-color);
 }
 
+/* Custom Text Selection */
+::selection{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
 
 section {
   /* padding to all sections, clean minimalist look */
@@ -57,4 +62,15 @@ section {
 /* applying colors to section tags */
 section {
   color: var(--text-color)
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding-left: 15%; /* accounts for the space required to see the content that the navbar blocks */
+  }
+}
+
+ .section-title {
+  text-align: center;
+  margin-bottom: 20px;
 }

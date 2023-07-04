@@ -38,9 +38,8 @@
     <!--Css-->
     <link rel="stylesheet" href="./css/global_css/global.css">
     <link rel="stylesheet" href="./css/landing.css">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/testimonials.css">
 
     <!--Scroll library-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -58,62 +57,115 @@
 </head>
 
 <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="#landing" id="landingc">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-home-heart'></i></a>
+            <a href="#about" id="aboutc">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-info-circle' ></i></a>
+            <a href="#resume" id="resumec">Resume&nbsp;<i class='bx bx-book-content'></i></a>
+            <a href="#skills" id="skillsc">Skills&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-wrench'></i></a>
+            <a href="#projects" id="projectsc">Projects&nbsp;<i class='bx bxs-invader'></i></a>
+            <a href="#testimonials" id="testimonialsc">Test&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-group'></i></a>
+            <a href="#contact" id="contactc">Contact&nbsp;<i class='bx bx-phone' ></i></a>
+        </div>
+
+    <!--Google translate-->
+    <!-- <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <div id="google_translate_element"></div> -->
+
     <!--Landing Page Section-->
-    <section class="landing" id="landing">
-        <div class="social" 
-        data-aos="fade-up" 
+    <section class="landing" id="landing" 
+    data-aos="fade-right" 
+    data-aos-offset="200" 
+    data-aos-delay="10"
+    data-aos-duration="500" 
+    data-aos-easing="ease-in-out" 
+    data-aos-mirror="true" 
+    data-aos-once="false">
+        <div class="social">
+            <!-- Social Icons -->
+            <a href="https://github.com/UmayrNordien"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/umayrnordien/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100003367218579"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.linkedin.com/in/umayr-nordien-9461a51a6/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.paypal.com/paypalme/umayrnordien"><i class='bx bxl-paypal'></i></a>
+        </div>
+
+        <div class="landing-img" 
+        data-aos="fade-left" 
         data-aos-offset="200" 
         data-aos-delay="10" 
         data-aos-duration="500"
         data-aos-easing="ease-in-out" 
         data-aos-mirror="true" 
         data-aos-once="false">
-            <a href="https://github.com/UmayrNordien"><i class='bx bxl-github'></i></a>
-            <a href="https://www.instagram.com/umayrnordien/"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100003367218579"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100003367218579"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://www.paypal.com/paypalme/umayrnordien"><i class='bx bxl-paypal'></i></a>
-
-        </div>
-        <div class="landing-img" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10" data-aos-duration="500"
-            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
             <span>
-                <img src="https://i.postimg.cc/gjXf5CXx/Profile-image-modified.png" class="profile-img"
-                    alt="Landing Prodile Image">
+                <img src="https://i.postimg.cc/gjXf5CXx/Profile-image-modified.png"
+                    alt="Landing Profile Image">
             </span>
         </div>
-        <div class="landing-text" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10" data-aos-duration="500"
-            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
 
-            <span>Welcome, I'm . . .</span>
-            <h1 class="typing">Umayr Nordien</h1>
+        <div class="landing-text" 
+        data-aos="fade-center" 
+        data-aos-offset="200" 
+        data-aos-delay="10"
+        data-aos-duration="500" 
+        data-aos-easing="ease-in-out" 
+        data-aos-mirror="true" 
+        data-aos-once="false">
+            <span>Welcome, I'm . . .</span><br>
+            <h1>Umayr Nordien</h1>
             <h2>Intern at LC Studio</h2>
             <h2>Life Choices Coding Academy</h2>
             <p>Web Developer · UI/UX · SEO</p>
 
             <!--BUTTONS-->
             <a href="https://www.canva.com/design/DAFeYeDVUsc/yZp-BNWNj3cIAjBRi8Fb0Q/view?utm_content=DAFeYeDVUsc&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu"
-                class="btn">View CV</a>
+                class="viewcv-btn">View CV
+            </a>
         </div>
     </section>
 
     <!-- About section -->
-    <section id="about">
-        <h2>About Me</h2>
+    <section id="about"
+    data-aos="fade-right" 
+    data-aos-offset="200" 
+    data-aos-delay="10"
+    data-aos-duration="500" 
+    data-aos-easing="ease-in-out" 
+    data-aos-mirror="true" 
+    data-aos-once="false">
+        <h2 class="section-title">About Me</h2>
         <p>Hi, I'm Umayr Nordien, a front-end developer based in [City, Country]. I have [Number] years of experience in
             web development and a passion for creating beautiful and functional websites. In my free time, I enjoy
             [hobby].</p>
     </section>
 
     <!-- Resume section -->
-    <section id="resume">
-        <h2>Resume</h2>
+    <section id="resume"
+    data-aos="fade-right" 
+    data-aos-offset="200" 
+    data-aos-delay="10"
+    data-aos-duration="500" 
+    data-aos-easing="ease-in-out" 
+    data-aos-mirror="true" 
+    data-aos-once="false">
+        <h2 class="section-title">Resume</h2>
         <p>Download my resume <a href="#">here</a>.</p>
     </section>
 
     <!-- Skills section -->
-    <section id="skills">
-        <h2>Skills</h2>
+    <section id="skills"
+    data-aos="fade-right" 
+    data-aos-offset="200" 
+    data-aos-delay="10"
+    data-aos-duration="500" 
+    data-aos-easing="ease-in-out" 
+    data-aos-mirror="true" 
+    data-aos-once="false">
+        <h2 class="section-title">Skills</h2>
         <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -125,8 +177,15 @@
     </section>
 
     <!-- Projects section -->
-    <section id="projects">
-        <h2>Projects</h2>
+    <section id="projects"
+    data-aos="fade-right" 
+    data-aos-offset="200" 
+    data-aos-delay="10"
+    data-aos-duration="500" 
+    data-aos-easing="ease-in-out" 
+    data-aos-mirror="true" 
+    data-aos-once="false">
+        <h2 class="section-title">Projects</h2>
         <ul>
             <li>
                 <h3>Project 1</h3>
@@ -148,16 +207,71 @@
 
     <!-- Testimonials section -->
     <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div>
-            <p>"[Quote from satisfied client or colleague]"</p>
-            <p>-[Name of client or colleague]</p>
+        <h2 class="section-title">Testimonials</h2>
+        <div class="testimonial-container">
+            <script>
+                const testimonials = [
+                    {
+                        name: "Aneeqah Brown",
+                        position: "Intern",
+                        image: "https://i.postimg.cc/ZKT7Df0b/DSC-3548-modified.png",
+                        text: "Umayr is a highly thought intellectual from my perspective. He is not only hardworking but ambitious to recreate his vision exactly as thought of. He does his work accordingly and always provide a helping hand. He has great communication and leadership skills that a company needs especially his creativity"
+                    },
+                    {
+                        name: "Deno Rautenbach",
+                        position: "Intern",
+                        image: "https://i.postimg.cc/rmm3bQfR/DSC-3597-modified.png",
+                        text: "Umayr's quiet demeanor creates a mystique aura of wonder around the depth of his character, So deep that all i have for him is the utmost respect and admiration in his stoic approach to life .Having worked with him, I can proudly say his steadfast, results oriented methodology is one everyone should strive for and implement"
+                    },
+                    {
+                        name: "Javier Goodall",
+                        position: "Intern",
+                        image: "https://i.postimg.cc/850BCHNv/DSC-3562-modified.png",
+                        text: "He is still very dedicated and passionate about web development,where he spends a lot of his time completing projects and upskilling himself"
+                    },
+                    {
+                        name: "Gift Mahlangu",
+                        position: "Intern",
+                        image: "https://i.postimg.cc/7YFCZR7D/Gift-Mahlangu-modified.png",
+                        text: "Umayr is a determined and hard working person who is passionate about software development. He is a creative person and has great coding skills coupled with a great personality. He works well in a team and can also work well on his own"
+                    },
+                    {
+                        name: "Asandile Langeni",
+                        position: "Intern",
+                        image: "https://i.postimg.cc/W4fvvx7D/DSC-3625-modified.png",
+                        text: "Umayr is a good person who is quiet but pays attention to everything that is happening around him.He likes to up-skill himself so that he can new knowledge all the time.He is always there to lend a helping hand"
+                    },
+                    {
+                        name: "Joel Mukanya",
+                        position: "Lecturer | Linux Goat",
+                        image: "https://i.postimg.cc/vHVBkvKK/Joel-Profile-modified.png",
+                        text: "Umayr is a very creative, go-getter, and well-behaved student. He does enjoy working with his classmates and works well on his project. He has gained knowledge of web development, including Bootstrap 5. I will be very delighted to see him get hired"
+                    }
+                ];
+
+                const testimonialContainer = document.querySelector('.testimonial-container');
+
+                testimonials.forEach(testimonial => {
+                    const testimonialCard = `
+                            <div class="testimonial-card">
+                                <div class="testimonial-image">
+                                    <img src="${testimonial.image}" alt="${testimonial.name}'s Profile Image" />
+                                </div>
+                                <h2>${testimonial.name}</h2>
+                                <h5><i class='bx bx-book-content'></i> ${testimonial.position}</h5>
+                                <p>${testimonial.text}</p>
+                            </div>
+                        `;
+                    testimonialContainer.innerHTML += testimonialCard;
+                });
+                console.log(testimonials)
+            </script>
         </div>
     </section>
 
     <!-- Contact section -->
     <section id="contact">
-        <h2>Contact</h2>
+        <h2 class="section-title">Contact</h2>
         <form action="#" method="post">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
@@ -177,15 +291,18 @@
     <script>AOS.init();</script>
 
     <!-- JavaScript -->
+    <script src="./js/global_js/global.js"></script>
+    <!-- <script src="./js/navbar.js"></script> -->
+    <!-- JavaScript imports-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-8X7T0dKdH+u6cPFn5g8QCVjexTgU6t1jZv2V6sL3X8NPHlJlZoJ5JwQf5eG0qf5"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <!--Google translate JS-->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
