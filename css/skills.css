@@ -1,4 +1,4 @@
-.section-title{
+.section-title {
     margin-bottom: 0px;
 }
 
@@ -36,13 +36,13 @@
     cursor: pointer;
 }
 
-/* .skills-box:hover>.skills-title: after,
-.skills-box:hover>.skills-title: before {
-    width: 30px;
-} */
+/* .skills-box:hover {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px;
+    transition: 1.5s;
+  } */
 
 .skills-box:hover .skills-img {
-    /* transform: translateX(-20px); */
     transform: scale(0.9);
     transition: 1.5s;
 }
@@ -55,29 +55,6 @@
     margin-bottom: 0.5rem;
     position: relative;
 }
-
-/* .skills-title:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    width: 20px;
-    height: 4px;
-    border-radius: 2px 0 0 2px;
-    background-color: var(--primary-color);
-    transition: .5s;
-}
-
-.skills-title:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 100px;
-    height: 4px;
-    border-radius: 0 2px 2px 0;
-    background-color: var(--secondary-color);
-} */
 
 .skills-icons {
     width: 50px;
@@ -96,24 +73,22 @@
     transition: .5s;
 }
 
+.skills-img:hover {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .skills-img:after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    /* width: 50%; */
     height: 90px;
-    /* background: #64646480; */
     background: var(--bg-color);
     border-radius: 50%;
-    /* border-radius: 45px 0 0 45px; */
     box-shadow: 5px 4px 9px 2px rgba(0, 0, 0, 0.1);
 }
 
-.skills-box .skills-img:hover{
-    box-shadow: -12px 12px 20px 2px rgba(0, 0, 0, 0.325) inset;
-}
 
 .skills-title h4 {
     color: var(--text-color);
@@ -139,12 +114,12 @@
     color: var(--primary-color);
 }
 
-span{
+span {
     font-size: 12px;
 }
 
 @media screen and (max-width: 767px) {
-    .skills-section{
+    .skills-section {
         overflow-y: scroll;
         overflow-x: hidden;
         height: 50vh;
@@ -153,7 +128,8 @@ span{
         width: 265px;
         margin: auto;
     }
-    .section-title{
+
+    .section-title {
         margin-bottom: 20px;
     }
 }
