@@ -11,7 +11,8 @@
     font-weight: 600;
     color: #252525; /* White text color */
     border-radius: 0.5rem;
-    box-shadow: 4px 4px 25px rgba(51, 51, 51, 0.096);
+    box-shadow: 5px 4px 9px 2px rgba(51, 51, 51, 0.096);
+    /* box-shadow: 4px 4px 25px rgba(51, 51, 51, 0.096); */
     z-index: 2;
   }
   
@@ -63,6 +64,6 @@
 
   @media screen and (max-width: 767px) {
     #mySidenav a  {
-      margin-top: 75px;
+      margin-top: 71px; /* previously 75px */
     }
   }

@@ -26,6 +26,10 @@
   --text-color: #353535;
 }
 
+body{
+  background-color: var(--bg-color)
+}
+
 /* Scroll */
 ::-webkit-scrollbar {
   height: 20px;
