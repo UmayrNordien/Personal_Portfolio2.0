@@ -24,6 +24,14 @@
   --bg-color: #fcfcfc;
   
   --text-color: #353535;
+
+  --nav-color-1: #ffe7fb;
+  --nav-color-2: #fee0f9;
+  --nav-color-3: #f1dafb;
+  --nav-color-4: #e4d3fc;
+  --nav-color-5: #d7cdfe;
+  --nav-color-6: #cac7ff;
+  --nav-color-7: #c1bdff;
 }
 
 body{

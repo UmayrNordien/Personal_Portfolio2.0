@@ -29,37 +29,37 @@
   /* Colors used - Purple Skies https://colorkit.co/palette/cac7ff-d7cdfe-e4d3fc-f1dafb-fee0f9/ */
   #landingc {
     /* top: 20px; */
-    background-color: #ffe7fb;
+    background-color: var(--nav-color-1);
   }
 
   #aboutc {
     top: 70px;
-    background-color: #fee0f9;
+    background-color: var(--nav-color-2);
   }
   
   #resumec {
     top: 130px;
-    background-color: #f1dafb; 
+    background-color: var(--nav-color-3); 
   }
   
   #skillsc {
     top: 190px;
-    background-color: #e4d3fc; 
+    background-color: var(--nav-color-4); 
   }
 
   #projectsc {
     top: 250px;
-    background-color: #d7cdfe; 
+    background-color: var(--nav-color-5); 
   }
 
   #testimonialsc {
     top: 310px;
-    background-color: #cac7ff; 
+    background-color: var(--nav-color-6); 
   }
   
   #contactc {
     top: 370px;
-    background-color:#c1bdff; 
+    background-color: var(--nav-color-7); 
   }
 
   @media screen and (max-width: 767px) {

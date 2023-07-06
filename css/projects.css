@@ -1,0 +1,119 @@
+/* Default Styles */
+#projects h2 {
+  margin-bottom: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 4px 9px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, var(--primary-color) 0%, var(--secondary-color) 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, var(--primary-color) 0%,var(--secondary-color) 100% );
+  color: #e8e8e8;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateY(-96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+}
+
+.card:hover .front-content {
+  transform: translateY(30%);
+}
+
+.card:hover .front-content p {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card-container {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .card-container:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
