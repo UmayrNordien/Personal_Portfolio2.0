@@ -25,7 +25,7 @@
     align-items: center;
     text-align: center;
     grid-gap: 1rem;
-    padding: 1rem 80px;
+    /* padding: 1rem 80px; */
     padding-top: 0px;
     font-size: 1.2rem;
 }
@@ -136,7 +136,7 @@ span {
 
 @media screen and (max-width: 496px) {
     .skills-section {
-        width: 265px;
+        width: 295px;
     }
 }
 @media screen and (max-width: 382px) {

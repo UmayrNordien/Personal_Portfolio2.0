@@ -66,7 +66,7 @@
 
 <body>
         <div id="mySidenav" class="sidenav">
-            <a href="#landing" id="landingc">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-home-heart'></i></a>
+            <a class="back-to-top-btn" id="landingc">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-home-heart'></i></a>
             <a href="#about" id="aboutc">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-info-circle' ></i></a>
             <a href="#resume" id="resumec">Resume&nbsp;<i class='bx bx-book-content'></i></a>
             <a href="#skills" id="skillsc">Skills&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-wrench'></i></a>
@@ -146,9 +146,18 @@
     data-aos-mirror="true" 
     data-aos-once="false">
         <h2 class="section-title">About Me</h2>
-        <p>Hi, I'm Umayr Nordien, a front-end developer based in [City, Country]. I have [Number] years of experience in
-            web development and a passion for creating beautiful and functional websites. In my free time, I enjoy
-            [hobby].</p>
+        <div class="aboutme-text-container">
+            <p>I possess a diverse skill set and background, including experience in sales, data
+                collection, martial arts, and graphic design. I am looking to pursue a career in the
+                coding space with a focus on front-end development. I have completed the coding and
+                soft skills course at Life Choices Coding Academy. Currently upskilling as an intern
+                developer at Life Choices while waiting for placement or job opportunity.
+                I have also gained skills in time management, and interpersonal communication
+                through various part-time roles and demonstrate a commitment to personal and
+                professional growth. My goal is to undergo as much learning as possible while
+                maintaining my personal best at every task I'm given in employment.
+            </p>
+        </div>
     </section>
 
     <!-- Resume section -->
@@ -349,19 +358,78 @@
     </section>
 
 <!-- Projects section -->
-<section id="projects" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10" data-aos-duration="500"
-    data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+<section id="projects" 
+data-aos="fade-up" 
+data-aos-offset="200" 
+data-aos-delay="10" 
+data-aos-duration="500"
+data-aos-easing="ease-in-out" 
+data-aos-mirror="true" 
+data-aos-once="false">
     <h2 class="section-title">Projects</h2>
+    <!--https://medium.com/@benjamin.flanders96/how-to-create-a-simple-javascript-filter-67e50b32ccb5-->
+      <div class="radio-inputs">
+        <label class="radio">
+          <input type="radio" name="radio" checked="">
+          <span class="name">ALL</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="radio" checked="">
+          <span class="name">HTML</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="name">CSS</span>
+        </label>
+            
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="name">JavaScript</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="name">Vue</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="name">Node.JS</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="name">UI/UX</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="name">WordPress</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="name">PHP</span>
+        </label>
+      </div>
+
     <div class="card-wrapper">
         <div class="card-container">
 
           <div class="card">
             <div class="front-content">
-              <p>Card 1</p>
+              <p>Vaulted Store - eCommerce</p>
+              <!-- <img src="https://i.postimg.cc/mg7DjCh3/Vltd-Shop.png" alt="Vaulted Store" height="100px" width="175px"> -->
             </div>
             <div class="content">
               <h2 class="heading">Card 1</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="card-button-container">
+                <button>LIVE</button>
+                <button>CODE</button>
+              </div>
             </div>
           </div>
         </div>
@@ -369,11 +437,15 @@
         <div class="card-container">
           <div class="card">
             <div class="front-content">
-              <p>Card 2</p>
+              <p>BitWatcher News Site</p>
             </div>
             <div class="content">
               <h2 class="heading">Card 2</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="card-button-container">
+                <button>LIVE</button>
+                <button>CODE</button>
+              </div>
             </div>
           </div>
         </div>
@@ -381,22 +453,30 @@
         <div class="card-container">
           <div class="card">
             <div class="front-content">
-              <p>Card 3</p>
+              <p>Movie Ranking App</p>
             </div>
             <div class="content">
               <h2 class="heading">Card 3</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="card-button-container">
+                <button>LIVE</button>
+                <button>CODE</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="card-container">
           <div class="card">
             <div class="front-content">
-              <p>Card 4</p>
+              <p>Counter</p>
             </div>
             <div class="content">
               <h2 class="heading">Card 4</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="card-button-container">
+                <button>LIVE</button>
+                <button>CODE</button>
+              </div>
             </div>
           </div>
         </div>
@@ -404,11 +484,15 @@
         <div class="card-container">
           <div class="card">
             <div class="front-content">
-              <p>Card 5</p>
+              <p>CoinFlip Game</p>
             </div>
             <div class="content">
               <h2 class="heading">Card 5</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="card-button-container">
+                <button>LIVE</button>
+                <button>CODE</button>
+              </div>
             </div>
           </div>
         </div>
@@ -416,11 +500,15 @@
         <div class="card-container">
           <div class="card">
             <div class="front-content">
-              <p>Card 6</p>
+              <p>Bazu Gaming - PayFast</p>
             </div>
             <div class="content">
               <h2 class="heading">Card 6</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="card-button-container">
+                <button>LIVE</button>
+                <button>CODE</button>
+              </div>
             </div>
           </div>
         </div>
