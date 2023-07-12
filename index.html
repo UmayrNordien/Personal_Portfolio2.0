@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="./css/footer.css">
 
     <!-- SweetAlert2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css"> 
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">  -->
     <!--Scroll library-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -73,7 +73,7 @@
             <a href="#skills" id="skillsc">Skills&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-wrench'></i></a>
             <a href="#projects" id="projectsc">Projects&nbsp;<i class='bx bxs-invader'></i></a>
             <a href="#testimonials" id="testimonialsc">Test&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-group'></i></a>
-            <a href="#contact" id="contactc">Contact&nbsp;<i class='bx bx-phone' ></i></a>
+            <a href="#contact-side" id="contactc">Contact&nbsp;<i class='bx bx-phone' ></i></a>
         </div>
 
     <!--Google translate-->
@@ -163,9 +163,82 @@
 
     <!-- Resume section -->
     <section id="resume">
-        <h2 class="section-title">Resume</h2>
+      <h2 class="section-title"     
+      data-aos="fade-up" 
+      data-aos-offset="200" 
+      data-aos-delay="10"
+      data-aos-duration="900" 
+      data-aos-easing="ease-in-out" 
+      data-aos-mirror="true" 
+      data-aos-once="false">Resume</h2>
+      <div class="resume-container">
+          <ul id="resume-items">
+          </ul>
+      </div>
+  </section>
+  <script>
+      const resumeItems = [
+          {
+              year: "2012-2016",
+              title: "Norman Henshilwood High School",
+              description: `Attended Norman Henshilwood High School ...`,
+              link: "https://henshilwoodhigh.co.za/"
+          },
+          {
+              year: "2017-2018",
+              title: "Darun Naim",
+              description: `Spent some time studying Islamic religious ...`,
+              link: "https://darun-naim.co.za/"
+          },
+          {
+              year: "2018-2019",
+              title: "Exclusive Badge Company",
+              description: `Accepted an offer from a family owned Badge Business ...`,
+              link: "N/A"
+          },
+          {
+              year: "2020-2021",
+              title: "Sales",
+              description: `Gained valuable experience and lessons from my sales and entrepreneurial endeavors ...`,
+              link: "N/A"
+          },
+          {
+              year: "2022",
+              title: "Stats SA",
+              description: `Previously employed at StatsSA, as a fieldworker ...`,
+              link: "N/A"
+          },
+          {
+              year: "2022-2023",
+              title: "Life Choices Coding Academy",
+              description: `Coding and soft skills course at Life Choices Coding Academy and currently upskilling as a intern developer at the LC Studio ...`,
+              link: "https://lifechoices.co.za/"
+          }
+      ];
 
-    </section>
+      function generateResumeHtml(items) {
+          return items.map(item => `
+              <li class=""     
+          data-aos="fade-up" 
+          data-aos-offset="300" 
+          data-aos-delay="40"
+          data-aos-duration="500" 
+          data-aos-easing="ease-in-out" 
+          data-aos-mirror="true" 
+          data-aos-once="false">
+                  <h6 class="resume-year">${item.year}</h6>
+                  <h3 class="resume-title">${item.title}</h3>
+                  <p>${item.description}</p>
+                  ${item.link ? 
+                    `<a href="${item.link}">visit <i class='bx bxs-right-arrow-circle'></i></a>` : ''
+                  }
+                  <span class="circle"></span>
+              </li>
+          `).join('');
+      }
+
+      document.querySelector('#resume-items').innerHTML = generateResumeHtml(resumeItems);
+  </script>
 
     <!-- Skills section -->
     <section id="skills"
@@ -591,22 +664,47 @@ data-aos-once="false">
 
     <!-- Contact section -->
     <section id="contact-side">
-        <h2 class="section-title">Contact</h2>
-        <div id="mySidenav" class="sidenav">
+        <div id="mySidenav-contact" class="sidenav-contact">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        </div>
-        
-        <!-- Use any element to open the sidenav -->
-        <span onclick="openNav()">open</span>
-        
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        <div id="main">
-          ...
+          <div class="contact-container w-75 mx-auto">
+            <h2 class="contact-title">Contact Us</h2>
+            <form action="https://formspree.io/f/myyvjoyz" method="post">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <input class="btn btn-outline-dark" type="submit" value="Submit">
+            </form>
+          </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    <section id="footer-section-id" class="footer-side">
+      <!--Footer Section-->
+      <div class="copyright">
+        <a href="https://github.com/UmayrNordien"><i class='bx bxl-github'></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100003367218579"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/umayrnordien/"><i class='bx bxl-instagram'></i></a>
+        <a href=""><i class='bx bxl-linkedin'></i></a>
+        <a href=""><i class='bx bxl-paypal'></i></a>
+        <a href=""><i class='bx bx-link'></i></a>
+                <!-- Use any element to open the sidenav -->
+                <button class="contact-btn" onclick="openNav()">Contact Me</button class="viewcv-btn">
+        <p>Portfolio Made By Umayr Nordien | All Right Reserved</p>
+      </div>
+    </section>
+
     <!-- SweetAlert2 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script> -->
     <!--Scroll library-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>

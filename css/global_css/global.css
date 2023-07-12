@@ -65,9 +65,9 @@ body{
 
 section {
   /* padding to all sections, clean minimalist look */
-  padding-top: 50px;
+  padding-top: 15px;
   padding-right: 10%;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
   padding-left: 10%;
 }
 
@@ -85,4 +85,25 @@ section {
  .section-title {
   text-align: center;
   margin-bottom: 20px;
+}
+
+/* Styling  */
+/* unvisited link */
+a:link {
+  color: var(--primary-color);
+}
+
+/* visited link */
+a:visited {
+  color: var(--primary-color);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* selected link */
+a:active {
+  color: var(--primary-color);
 }

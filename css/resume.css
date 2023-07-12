@@ -1,33 +1,14 @@
-.accordion {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .accordion-header {
-    background-color: #ddd;
-    border-right: 1px solid #ccc;
-    cursor: pointer;
-    padding: 10px;
-    width: 200px;
+.resume-container ul li {
     text-align: center;
-  }
-  
-  .accordion-body {
-    border-left: 1px solid #ccc;
+    overflow-y: scroll;
+    height: 20vh;
     padding: 10px;
-    display: none;
-    overflow-y: auto;
-    flex-grow: 1;
+    box-shadow: 5px 4px 9px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
   }
-  
-  .accordion-header.active {
-    background-color: #ccc;
+@media screen and (max-width: 767px) {
+  .resume-container{
+    width: 250px;
+    margin: auto;
   }
-  
-  .accordion-header:hover {
-    background-color: #ddd;
-  }
-  
-  .accordion-header.active + .accordion-body {
-    display: block;
-  }
+}
