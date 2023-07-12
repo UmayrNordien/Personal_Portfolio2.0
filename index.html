@@ -162,15 +162,15 @@
     </section>
 
     <!-- Resume section -->
-    <section id="resume">
-      <h2 class="section-title"     
-      data-aos="fade-up" 
-      data-aos-offset="200" 
-      data-aos-delay="10"
-      data-aos-duration="900" 
-      data-aos-easing="ease-in-out" 
-      data-aos-mirror="true" 
-      data-aos-once="false">Resume</h2>
+    <section id="resume"
+    data-aos="fade-up" 
+    data-aos-offset="200" 
+    data-aos-delay="10"
+    data-aos-duration="500" 
+    data-aos-easing="ease-in-out" 
+    data-aos-mirror="true" 
+    data-aos-once="false">
+      <h2 class="section-title">Resume</h2>
       <div class="resume-container">
           <ul id="resume-items">
           </ul>
@@ -179,25 +179,25 @@
   <script>
       const resumeItems = [
           {
-              year: "2012-2016",
+              year: "2012 - 2016",
               title: "Norman Henshilwood High School",
               description: `Attended Norman Henshilwood High School ...`,
               link: "https://henshilwoodhigh.co.za/"
           },
           {
-              year: "2017-2018",
+              year: "2017 - 2018",
               title: "Darun Naim",
               description: `Spent some time studying Islamic religious ...`,
               link: "https://darun-naim.co.za/"
           },
           {
-              year: "2018-2019",
+              year: "2018 - 2019",
               title: "Exclusive Badge Company",
               description: `Accepted an offer from a family owned Badge Business ...`,
               link: "N/A"
           },
           {
-              year: "2020-2021",
+              year: "2020 - 2021",
               title: "Sales",
               description: `Gained valuable experience and lessons from my sales and entrepreneurial endeavors ...`,
               link: "N/A"
@@ -209,7 +209,7 @@
               link: "N/A"
           },
           {
-              year: "2022-2023",
+              year: "2022 - 2023",
               title: "Life Choices Coding Academy",
               description: `Coding and soft skills course at Life Choices Coding Academy and currently upskilling as a intern developer at the LC Studio ...`,
               link: "https://lifechoices.co.za/"
@@ -218,27 +218,25 @@
 
       function generateResumeHtml(items) {
           return items.map(item => `
-              <li class=""     
-          data-aos="fade-up" 
-          data-aos-offset="300" 
-          data-aos-delay="40"
-          data-aos-duration="500" 
-          data-aos-easing="ease-in-out" 
-          data-aos-mirror="true" 
-          data-aos-once="false">
-                  <h6 class="resume-year">${item.year}</h6>
-                  <h3 class="resume-title">${item.title}</h3>
-                  <p>${item.description}</p>
-                  ${item.link ? 
-                    `<a href="${item.link}">visit <i class='bx bxs-right-arrow-circle'></i></a>` : ''
-                  }
-                  <span class="circle"></span>
-              </li>
+              <li class="">
+          <button type="button" class="collapsible">${item.year}</button>
+          <div class="content">
+            <h3 class="resume-title">${item.title}</h3>
+            <p>${item.description}</p>
+            <!-- Link to site -->
+            ${item.link ?
+            `<a href="${item.link}">visit <i class='bx bxs-right-arrow-circle'></i></a>` : ''
+            }
+            <span class="circle"></span>
+            </li>
+          </div>
           `).join('');
       }
 
       document.querySelector('#resume-items').innerHTML = generateResumeHtml(resumeItems);
   </script>
+
+
 
     <!-- Skills section -->
     <section id="skills"
@@ -712,6 +710,7 @@ data-aos-once="false">
     <!-- JavaScript -->
     <script src="./js/global_js/global.js"></script>
     <script src="./js/contact.js"></script>
+    <script src="./js/resume.js"></script>
     <!-- JavaScript imports-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
