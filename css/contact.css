@@ -56,16 +56,18 @@
 }
 
 input{
+  margin-left:5px;
   border: none;
   border-radius: 0.5rem;
   padding: 20px;
   box-shadow: inset 5px 4px 9px 2px rgba(51, 51, 51, 0.192);
 }
 textarea{
+  margin-left:5px;
   border: none;
   border-radius: 0.5rem;
   box-shadow: inset 5px 4px 9px 2px rgba(51, 51, 51, 0.192);
-  width: 96%;
+  width: 93%;
 }
 
 form a{
@@ -81,6 +83,7 @@ form a:hover {
 }
 
 .submit-btn {
+  margin-left:5px;
   color: var(--bg-color) !important;
   font-size: 12px !important;
   padding: 10px 20px !important;
