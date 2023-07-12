@@ -66,6 +66,11 @@
 </head>
 
 <body>
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
         <div id="mySidenav" class="sidenav">
             <a class="back-to-top-btn" id="landingc">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-home-heart'></i></a>
             <a href="#about" id="aboutc">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-info-circle' ></i></a>
@@ -180,38 +185,74 @@
       const resumeItems = [
           {
               year: "2012 - 2016",
-              title: "Norman Henshilwood High School",
-              description: `Attended Norman Henshilwood High School ...`,
+              title: "Norman Henshilwood High",
+              description: `Attended Norman Henshilwood High School and Frank Joubert Art School in 2016 was a defining
+                        moment in my personal and professional development. By combining a strong academic foundation
+                        with specialized artistic training, I was able to develop a unique perspective and skill set.
+                        At Norman Henshilwood High School, I honed my critical thinking and problem-solving abilities,
+                        preparing me for the challenges of the real world. At Frank Joubert Art School, I discovered my
+                        passion for creativity and gained valuable insights into the artistic process. This combination
+                        of academic rigor and artistic expression allowed me to develop a well-rounded and versatile
+                        character, with a keen eye for detail and a natural instinct for design.
+                        The experience of attending both schools has had a profound impact on my life, shaping who I am
+                        today and influencing my future endeavors. I am confident that my time at Norman Henshilwood
+                        High School and Frank Joubert Art School will continue to shape my character and ability,
+                        especially in the creation and seeking of unique art and aesthetics, for many years to come.`,
               link: "https://henshilwoodhigh.co.za/"
           },
           {
               year: "2017 - 2018",
               title: "Darun Naim",
-              description: `Spent some time studying Islamic religious ...`,
+              description: `SSpent some time studying Islamic religious studies (Arabic translation and Morphology) at Darun
+                        Naim Islamic Institute. This rigorous academic journey has resulted in an in-depth understanding
+                        of Islam, its historical significance, and its core teachings. Additionally, the focus on Arabic
+                        translation and morphology has sharpened my ability to interpret and analyze religious texts,
+                        including the Qur'an, in their original language.`,
               link: "https://darun-naim.co.za/"
           },
           {
               year: "2018 - 2019",
               title: "Exclusive Badge Company",
-              description: `Accepted an offer from a family owned Badge Business ...`,
+              description: `Made myself busy involved in the creation of badges for various primary and high schools, as well
+                        as select private businesses in the surrounding area. This involved beveling the badges to
+                        ensure their professional appearance, and packaging and delivering the finished products to the
+                        various institutions.
+                        Through this experience, I developed a number of valuable skills that will make me an asset to
+                        future endeavors. Firstly, my attention to detail and ability to ensure a high level of quality
+                        in my work was honed as I was responsible for beveling the badges to a professional standard.
+                        Additionally, my organizational and time-management skills were put to the test as I was
+                        involved in the packaging and delivery process, ensuring that all of the badges were properly
+                        packaged and delivered to their intended recipients in a timely and efficient manner.
+                        Overall, this work has given me a deeper understanding of the importance of precision and
+                        organization in a professional setting, and I am confident that these skills will be valuable
+                        assets in any future work I may pursue.`,
               link: "N/A"
           },
           {
               year: "2020 - 2021",
               title: "Sales",
-              description: `Gained valuable experience and lessons from my sales and entrepreneurial endeavors ...`,
+              description: `I have gained valuable experience and lessons from my sales and entrepreneurial endeavors.
+                        Despite facing challenges, I have remained determined and resilient in my approach,
+                        demonstrating my commitment to success. Through reflection and continuous learning, I have been
+                        able to leverage these experiences to drive my personal and professional growth. I am confident
+                        that these skills and lessons will continue to benefit me in the future as I strive for success
+                        and growth in my career.`,
               link: "N/A"
           },
           {
               year: "2022",
               title: "Stats SA",
-              description: `Previously employed at StatsSA, as a fieldworker ...`,
+              description: `>I was previously employed at StatsSA, where I honed my skills as a fieldworker. During my tenure,
+                        I was responsible for a range of tasks, including data collection, data capturing, data
+                        processing, and supervision. I was also required to exhibit strong communication skills and a
+                        proactive approach to my work, which helped me to effectively manage teams and interact with
+                        individuals from a variety of backgrounds`,
               link: "N/A"
           },
           {
               year: "2022 - 2023",
               title: "Life Choices Coding Academy",
-              description: `Coding and soft skills course at Life Choices Coding Academy and currently upskilling as a intern developer at the LC Studio ...`,
+              description: `Have finished the coding and soft skills course at Life Choices Coding Academy and currently upskilling as a intern developer at the LC Studio.`,
               link: "https://lifechoices.co.za/"
           }
       ];
@@ -219,7 +260,7 @@
       function generateResumeHtml(items) {
           return items.map(item => `
               <li class="">
-          <button type="button" class="collapsible">${item.year}</button>
+          <button type="button" class="collapsible">${item.year} : <span>${item.title}</span> <i class='bx bxs-down-arrow-circle'></i></button>
           <div class="content">
             <h3 class="resume-title">${item.title}</h3>
             <p>${item.description}</p>
@@ -679,7 +720,8 @@ data-aos-once="false">
                 <label for="message" class="form-label">Message:</label>
                 <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
               </div>
-              <input class="btn btn-outline-dark" type="submit" value="Submit">
+              <a type="submit" value="Submit" class="submit-btn">Submit
+              </a>            
             </form>
           </div>
         </div>
@@ -694,10 +736,10 @@ data-aos-once="false">
         <a href="https://www.instagram.com/umayrnordien/"><i class='bx bxl-instagram'></i></a>
         <a href=""><i class='bx bxl-linkedin'></i></a>
         <a href=""><i class='bx bxl-paypal'></i></a>
-        <a href=""><i class='bx bx-link'></i></a>
-                <!-- Use any element to open the sidenav -->
-                <button class="contact-btn" onclick="openNav()">Contact Me</button class="viewcv-btn">
-        <p>Portfolio Made By Umayr Nordien | All Right Reserved</p>
+        <a href="" ><i class='bx bx-link'></i></a>
+        <!-- Open Sidenav -->
+        <a><i class='bx bx-phone contact-btn' onclick="openNav()"></i></a>
+        <p>Portfolio Made By Umayr Nordien | 2023 | All Rights Reserved</p>
       </div>
     </section>
 

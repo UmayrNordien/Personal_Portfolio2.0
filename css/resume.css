@@ -11,6 +11,14 @@
   font-size: 16px;
   font-weight: 600; /* increase the years importance */
 }
+.collapsible i{
+  float: right;
+}
+.collapsible span{
+  color: var(--bg-color);
+  background: #dfb6ee69;
+  font-size: 16px;
+}
 
 /* .content{
   border-left: 100px solid var(--bg-color) ;

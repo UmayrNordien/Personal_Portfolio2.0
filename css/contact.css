@@ -54,3 +54,38 @@
   margin: 20px;
   padding: 1.5rem 0;
 }
+
+input{
+  border: none;
+  border-radius: 0.5rem;
+  padding: 20px;
+  box-shadow: inset 5px 4px 9px 2px rgba(51, 51, 51, 0.192);
+}
+textarea{
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: inset 5px 4px 9px 2px rgba(51, 51, 51, 0.192);
+  width: 96%;
+}
+
+form a{
+  background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: var(--bg-color);
+  padding: 5px;
+  border-radius: 0.5rem;
+  box-shadow: 5px 4px 9px 2px rgba(51, 51, 51, 0.192);
+}
+form a:hover {
+  transform: scale(0.9);
+  background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+}
+
+.submit-btn {
+  color: var(--bg-color) !important;
+  font-size: 12px !important;
+  padding: 10px 20px !important;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  margin: left;
+}

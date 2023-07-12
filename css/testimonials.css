@@ -30,12 +30,22 @@
   background: linear-gradient(49deg, rgba(255, 255, 255, 1) 50%, var(--secondary-color) 100%);
 }
 
-.testimonial-card .testimonial-image {
+.testimonial-card .testimonial-image img {
   height: 150px;
   width: 150px;
   padding: 4px;
   background: var(--primary-color);
   border-radius: 50%;
+
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAMAAADhRa4NAAAAnFBMVEUAAAD/////gID/QID/M2b/K1XfQGDjOVXbJFXYJ1jbJFfbJFXXIlXXJFXYJFfWI1XXIlbWIlTXIlXXIlbXIlXXI1TWIVXXIVTXIVbYIlbWIlTWIVXXIVTXIVXWIlTXIVXXIVTWIlXWIlXXIlXXIlXXIVTWIVTWIVXXIlXXIVTWIVXXIlXXIlTWIVXXIVXXIVXWIlXXIVXXIVTWIVRPqBsLAAAAM3RSTlMAAQIEBQYICRUaIyotOU9RWWp4gIGFipGSlZeiqrG2uLm7yczZ3eDn6+zt8fL09vf6/f6BeCKOAAAAxUlEQVQYGX3BiRaBUBQF0KOIIhEyFRIZMp///zcpq/Wi7t74sCbR5Rb7fQ0Zre/Ht0s0sZDTvQdzURepbsTcw9ORaq1ZOFiAdWBh3QIwp2Jvmnsq5kDvRVWSUPXqYUHRAjuKdrhSdEVCUYItRVu4FLnonCk4d4ABBQOkPNby8KH5rOFryDRXrLRq4qsdskLYRsHY8M/GgMII+CMwUKIvWbLU8aMxo2LawL8RCyNUGj6ZeQ5Rw7kzdXdQyz6RRxsCczw2UfIGQMZtHdWqctsAAAAASUVORK5CYII=") 16 13, auto !important;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard syntax */
+  -webkit-user-drag: none; /* Safari */
+  -khtml-user-drag: none; /* Konqueror */
+  -moz-user-drag: none; /* Firefox */
+  -o-user-drag: none; /* Opera */
 }
 
 .testimonial-image img {
@@ -43,7 +53,7 @@
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 10px solid var(--bg-color);
+  border: 4px solid var(--bg-color);
 }
 
 .testimonial-card h2 {
