@@ -273,7 +273,7 @@
       function generateResumeHtml(items) {
           return items.map(item => `
               <li class="">
-          <button type="button" class="collapsible">${item.year} : <span>${item.title}</span> <i class='bx bxs-down-arrow-circle'></i></button>
+          <button type="button" class="collapsible"><h3>${item.year}</h3> : <span>${item.title}</span> <i class='bx bxs-down-arrow-circle'></i></button>
           <div class="content">
             <h3 class="resume-title">${item.title}</h3>
             <p>${item.description}</p>

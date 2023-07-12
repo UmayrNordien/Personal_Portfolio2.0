@@ -51,3 +51,11 @@
     margin: auto;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 389px) {
+    #about img{
+    margin-right: 120px;
+    margin-bottom: 10px;
+    }
+    
+}
