@@ -132,11 +132,18 @@ span {
 
 @media screen and (max-width: 496px) {
     .skills-section {
+        height: 75vh;
         width: 295px;
     }
 }
 @media screen and (max-width: 382px) {
     .skills-section {
+        height: 75vh;
         width: 200px;
+    }
+}
+@media screen and (max-width: 382px) {
+    .skills-section {
+        height: 75vh;
     }
 }
