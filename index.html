@@ -92,7 +92,7 @@
     <!--Landing Page Section-->
     <section class="landing" id="landing" 
     data-aos="fade-up" 
-    data-aos-offset="200" 
+    data-aos-offset="300" 
     data-aos-delay="10"
     data-aos-duration="500" 
     data-aos-easing="ease-in-out" 
@@ -109,7 +109,7 @@
 
         <div class="landing-img" 
         data-aos="fade-up" 
-        data-aos-offset="200" 
+        data-aos-offset="300" 
         data-aos-delay="10" 
         data-aos-duration="500"
         data-aos-easing="ease-in-out" 
@@ -145,7 +145,7 @@
     <!-- About section -->
     <section id="about"
     data-aos="fade-up" 
-    data-aos-offset="200" 
+    data-aos-offset="300" 
     data-aos-delay="10"
     data-aos-duration="500" 
     data-aos-easing="ease-in-out" 
@@ -182,7 +182,7 @@
     <!-- Resume section -->
     <section id="resume"
     data-aos="fade-up" 
-    data-aos-offset="200" 
+    data-aos-offset="300" 
     data-aos-delay="10"
     data-aos-duration="500" 
     data-aos-easing="ease-in-out" 
@@ -273,7 +273,7 @@
       function generateResumeHtml(items) {
           return items.map(item => `
               <li class="">
-          <button type="button" class="collapsible"><h3>${item.year}</h3> : <span>${item.title}</span> <i class='bx bxs-down-arrow-circle'></i></button>
+          <button type="button" class="collapsible">${item.year} : <span>${item.title}</span> <i class='bx bxs-down-arrow-circle'></i></button>
           <div class="content">
             <h3 class="resume-title">${item.title}</h3>
             <p>${item.description}</p>
@@ -295,7 +295,7 @@
     <!-- Skills section -->
     <section id="skills"
     data-aos="fade-up" 
-    data-aos-offset="200" 
+    data-aos-offset="300" 
     data-aos-delay="10"
     data-aos-duration="500" 
     data-aos-easing="ease-in-out" 
@@ -479,168 +479,39 @@
                     </div>
                 </div>
             
-            
             </div>
             
             </div>
     </section>
 
 <!-- Projects section -->
-<section id="projects" 
-data-aos="fade-up" 
-data-aos-offset="200" 
-data-aos-delay="10" 
-data-aos-duration="500"
-data-aos-easing="ease-in-out" 
-data-aos-mirror="true" 
-data-aos-once="false">
-    <h2 class="section-title">Projects</h2>
-    <!--https://medium.com/@benjamin.flanders96/how-to-create-a-simple-javascript-filter-67e50b32ccb5-->
-      <div class="radio-inputs">
-        <label class="radio">
-          <input type="radio" name="radio" checked="">
-          <span class="name">ALL</span>
-        </label>
+<section id="projects" data-aos="fade-up" data-aos-offset="300" data-aos-delay="10" data-aos-duration="500"
+  data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+  <h2 class="section-title">Projects</h2>
+  <!-- Control buttons -->
+  <div id="myBtnContainer">
+    <button class="filter-btn active" onclick="filterSelection('all')"> ALL</button>
+    <button class="filter-btn" onclick="filterSelection('html-css-javascript')"> HTML/CSS/JS</button>
+    <button class="filter-btn" onclick="filterSelection('wordpress')"> WORDPRESS</button>
+    <button class="filter-btn" onclick="filterSelection('api')"> API</button>
+    <button class="filter-btn" onclick="filterSelection('other')"> OTHER</button>
+    <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for projects.." title="Type in a name"> -->
+  </div>
 
-        <label class="radio">
-          <input type="radio" name="radio" checked="">
-          <span class="name">HTML</span>
-        </label>
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <!-- Projects -->
+  <div class="project-container">
 
-        <label class="radio">
-          <input type="radio" name="radio">
-          <span class="name">CSS</span>
-        </label>
-            
-        <label class="radio">
-          <input type="radio" name="radio">
-          <span class="name">JavaScript</span>
-        </label>
+    <div class="filterDiv ecommerce">
+      <h4>Vaulted Store</h4>
+      <img src="https://i.postimg.cc/mg7DjCh3/Vltd-Shop.png" alt="Vaulted Store" height="100px" width="190px">
+    </div>
 
-        <label class="radio">
-          <input type="radio" name="radio">
-          <span class="name">Vue</span>
-        </label>
-
-        <label class="radio">
-          <input type="radio" name="radio">
-          <span class="name">Node.JS</span>
-        </label>
-
-        <label class="radio">
-          <input type="radio" name="radio">
-          <span class="name">UI/UX</span>
-        </label>
-
-        <label class="radio">
-          <input type="radio" name="radio">
-          <span class="name">WordPress</span>
-        </label>
-
-        <label class="radio">
-          <input type="radio" name="radio">
-          <span class="name">PHP</span>
-        </label>
-      </div>
-
-    <div class="card-wrapper">
-        <div class="card-container">
-
-          <div class="card">
-            <div class="front-content">
-              <p>Vaulted Store - eCommerce</p>
-              <!-- <img src="https://i.postimg.cc/mg7DjCh3/Vltd-Shop.png" alt="Vaulted Store" height="100px" width="175px"> -->
-            </div>
-            <div class="content">
-              <h2 class="heading">Card 1</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="card-button-container">
-                <button>LIVE</button>
-                <button>CODE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="card-container">
-          <div class="card">
-            <div class="front-content">
-              <p>BitWatcher News Site</p>
-            </div>
-            <div class="content">
-              <h2 class="heading">Card 2</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="card-button-container">
-                <button>LIVE</button>
-                <button>CODE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="card-container">
-          <div class="card">
-            <div class="front-content">
-              <p>Movie Ranking App</p>
-            </div>
-            <div class="content">
-              <h2 class="heading">Card 3</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="card-button-container">
-                <button>LIVE</button>
-                <button>CODE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="card">
-            <div class="front-content">
-              <p>Counter</p>
-            </div>
-            <div class="content">
-              <h2 class="heading">Card 4</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="card-button-container">
-                <button>LIVE</button>
-                <button>CODE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-container">
-          <div class="card">
-            <div class="front-content">
-              <p>CoinFlip Game</p>
-            </div>
-            <div class="content">
-              <h2 class="heading">Card 5</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="card-button-container">
-                <button>LIVE</button>
-                <button>CODE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-container">
-          <div class="card">
-            <div class="front-content">
-              <p>Bazu Gaming - PayFast</p>
-            </div>
-            <div class="content">
-              <h2 class="heading">Card 6</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="card-button-container">
-                <button>LIVE</button>
-                <button>CODE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="filterDiv api">BitWatcher News Site</div>
+      <div class="filterDiv api">Movie Ranking App</div>
+      <div class="filterDiv html-css-javascript">Counter</div>
+      <div class="filterDiv html-css-javascript">CoinFlip Game</div>
+      <div class="filterDiv ecommerce wordpress">Bazu Gaming - PayFast</div>
     </div>
 </section>
 
@@ -768,6 +639,7 @@ data-aos-once="false">
     <script src="./js/global_js/global.js"></script>
     <script src="./js/contact.js"></script>
     <script src="./js/resume.js"></script>
+    <script src="./js/project.js"></script>
     <!-- JavaScript imports-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

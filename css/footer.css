@@ -49,3 +49,10 @@
     transform: scale(0.9);
     background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
   }
+
+@media screen and (max-width: 768px) {
+    .copoyright p{
+        font-size: 10px !important;
+    }
+    
+}
