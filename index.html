@@ -485,44 +485,116 @@
             </div>
     </section>
 
-<!-- Projects section -->
-<section id="projects" data-aos="fade-up" data-aos-offset="300" data-aos-delay="10" data-aos-duration="500"
-  data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
-  <h2 class="section-title">Projects</h2>
-  <!-- Control buttons -->
-  <div id="myBtnContainer">
-    <button class="filter-btn active" onclick="filterSelection('all')"> ALL</button>
-    <button class="filter-btn" onclick="filterSelection('html-css-javascript')"> HTML/CSS/JS</button>
-    <button class="filter-btn" onclick="filterSelection('wordpress')"> WORDPRESS</button>
-    <button class="filter-btn" onclick="filterSelection('api')"> API</button>
-    <button class="filter-btn" onclick="filterSelection('other')"> OTHER</button>
-    <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for projects.." title="Type in a name"> -->
-  </div>
+    <!-- Projects section -->
+    <section id="projects" data-aos="fade-up" data-aos-offset="300" data-aos-delay="10" data-aos-duration="500"
+        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+        <h2 class="section-title">Recent Projects</h2>
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+            <button class="filter-btn active" onclick="filterSelection('all')"> ALL</button>
+            <button class="filter-btn" onclick="filterSelection('html-css-javascript')"> HTML/CSS/JS</button>
+            <button class="filter-btn" onclick="filterSelection('wordpress')"> WORDPRESS</button>
+            <button class="filter-btn" onclick="filterSelection('api')"> API</button>
+            <button class="filter-btn" onclick="filterSelection('other')" disabled> OTHER</button>
+            <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for projects.." title="Type in a name"> -->
+        </div>
 
-  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-  <!-- Projects -->
-  <div class="project-container">
-
-    <div class="filterDiv ecommerce">
-      <h4>Vaulted Store</h4>
-      <div class="project-image-container">
-      <img src="https://i.postimg.cc/mg7DjCh3/Vltd-Shop.png" alt="Vaulted Store" height="120px" width="210px">
-      <div class="middle">
-        <div class="text">LIVE</div>
-        <div class="text">CODE</div>
-      </div>
-      </div>
-    </div>
-
-      <div class="filterDiv api">BitWatcher News Site</div>
-      <div class="filterDiv api">Movie Ranking App</div>
-      <div class="filterDiv html-css-javascript">Counter</div>
-      <div class="filterDiv html-css-javascript">CoinFlip Game</div>
-      <div class="filterDiv ecommerce wordpress">Bazu Gaming - PayFast</div>
-    </div>
-</section>
-
-
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <!-- Projects -->
+        <div class="project-container">
+            <div class="filterDiv html-css-javascript">
+                <img src="https://i.postimg.cc/mg7DjCh3/Vltd-Shop.png" alt="Project Image">
+                <div class="project-info">
+                    <h3>Vaulted Store</h3>
+                    <p>eCommerce Clothing Store</p>
+                    <div class="btn-container">
+                        <a href="https://vaultedstore.netlify.app">
+                            <button class="project-btn">LIVE</button>
+                        </a>
+                        <a href="https://github.com/UmayrNordien/eComplete_Vaulted_Store.git">
+                            <button class="project-btn">CODE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv api">
+                <img src="https://i.postimg.cc/NFW1m57V/bitwatcher.png" alt="Project Image">
+                <div class="project-info">
+                    <h3>BitWatcher News Site</h3>
+                    <p>API News Site</p>
+                    <div class="btn-container">
+                        <a href="https://bitwatcher.netlify.app">
+                            <button class="project-btn">LIVE</button>
+                        </a>
+                        <a href="https://github.com/UmayrNordien/bitwatcher.git">
+                            <button class="project-btn">CODE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv api">
+                <img src="https://i.postimg.cc/cHNf58HD/Movie-App.png" alt="Project Image">
+                <div class="project-info">
+                    <h3>Movie Ranking App</h3>
+                    <p>API Movie Site with search</p>
+                    <div class="btn-container">
+                        <a href="https://mymovieappapi.netlify.app">
+                            <button class="project-btn">LIVE</button>
+                        </a>
+                        <a href="https://github.com/UmayrNordien/Movie_App.git">
+                            <button class="project-btn">CODE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv ecommerce wordpress">
+                <img src="https://i.postimg.cc/VNNsj1sB/Bazu-Gaming.png" alt="Project Image">
+                <div class="project-info">
+                    <h3>Bazu Gaming - PayFast</h3>
+                    <p>eCom Store with PayFast & login</p>
+                    <div class="btn-container">
+                        <a href="https://dev-bazu.pantheonsite.io">
+                            <button class="project-btn">LIVE</button>
+                        </a>
+                        <a href="https://dev-bazu.pantheonsite.io">
+                            <button class="project-btn">CODE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv html-css-javascript">
+                <img src="https://i.postimg.cc/Qx9GJsCc/counter-app.png" alt="Project Image">
+                <div class="project-info">
+                    <h3>Counter</h3>
+                    <p>JS Counter</p>
+                    <div class="btn-container">
+                        <a href="https://umayrscounterapp.netlify.app">
+                            <button class="project-btn">LIVE</button>
+                        </a>
+                        <a href="https://github.com/UmayrNordien/Counter_App.git">
+                            <button class="project-btn">CODE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv html-css-javascript">
+                <img src="https://i.postimg.cc/7ZHktGRM/Coin-Flip-Game.png" class="projects-image" alt="Project Image">
+                <div class="project-info">
+                    <h3>CoinFlip Game</h3>
+                    <p>CoinFlip with counter and reset</p>
+                    <div class="btn-container">
+                        <a href="https://coinflipgamecounter.netlify.app">
+                            <button class="project-btn">LIVE</button>
+                        </a>
+                        <a href="https://github.com/UmayrNordien/CoinFlipGame.git">
+                            <button class="project-btn">CODE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Testimonials section -->
     <section id="testimonials"
     data-aos="fade-up" 
