@@ -17,7 +17,7 @@
   padding: 0;
   color: var(--bg-color);
   width: 100%;
-  height: 240px;
+  height: 245px;
   text-align: center;
   margin: 0;
   display: none;
@@ -38,7 +38,8 @@
 .filterDiv .btn-container {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px !important;
 }
 
 .filterDiv .btn-container button {
