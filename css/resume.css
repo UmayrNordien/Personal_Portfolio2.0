@@ -11,34 +11,36 @@
   font-size: 16px;
   font-weight: 600; /* increase the years importance */
 }
-.collapsible i{
-  float: right;
-}
-.collapsible span{
-  color: var(--bg-color);
-  background: #dfb6ee69;
-  font-size: 16px;
-}
+
+.collapsible i {
+  float:right
+  }
+  
+  .collapsible span {
+  color:var(--bg-color);
+  background:#dfb6ee69;
+  font-size:16px
+  }
 
 /* .content{
   border-left: 100px solid var(--bg-color) ;
   border-right: 100px solid var(--bg-color) ;
 } */
 
-.active, .collapsible:hover {
-  background-color: var(--secondary-color);
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  text-align: center;
-  overflow: hidden;
-  background-color: var(--bg-color);
-}
-
-.resume-container{
-  border-radius: 0.5rem;
-  box-shadow: 5px 4px 9px 2px rgba(51, 51, 51, 0.192);
-  padding: 0.5rem 1rem;
-}
+.active,.collapsible:hover {
+  background-color:var(--secondary-color)
+  }
+  
+  .content {
+  padding:0 18px;
+  display:none;
+  text-align:center;
+  overflow:hidden;
+  background-color:var(--bg-color)
+  }
+  
+  .resume-container {
+  border-radius:.5rem;
+  box-shadow:5px 4px 9px 2px rgba(51,51,51,0.192);
+  padding:.5rem 1rem
+  }

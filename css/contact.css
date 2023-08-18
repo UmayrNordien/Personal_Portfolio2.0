@@ -1,95 +1,95 @@
-/* The side navigation menu */
 .sidenav-contact {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 4; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(49deg, rgba(255, 255, 255, 1) 50%, var(--secondary-color) 100%);
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav-contact a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav-contact a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav-contact .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav-contact {padding-top: 15px;}
-  .sidenav-contact a {font-size: 18px;}
-}
-
-.contact-container {
-  margin: 20px;
-  padding: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-}
-
-input, textarea {
-  margin: 5px;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 20px;
-  box-shadow: inset 5px 4px 9px 2px rgba(51, 51, 51, 0.192);
-  width: 100%;
-  box-sizing: border-box;
-}
-
-form a{
-  background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  color: var(--bg-color);
-  padding: 5px;
-  border-radius: 0.5rem;
-  box-shadow: 5px 4px 9px 2px rgba(51, 51, 51, 0.192);
-}
-form a:hover {
-  transform: scale(0.9);
-  background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
-}
-
-.submit-btn {
-  margin: 5px;
-  color: var(--bg-color) !important;
-  font-size: 12px !important;
-  padding: 10px 20px !important;
-  width: 50%;
-  text-align: center;
-  justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-  input, textarea {
-    width: 93%;
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:4;
+  top:0;
+  left:0;
+  background:rgb(255,255,255);
+  background:linear-gradient(49deg,rgba(255,255,255,1) 50%,var(--secondary-color) 100%);
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:.5s
   }
-}
+  
+  .sidenav-contact a {
+  padding:8px 8px 8px 32px;
+  text-decoration:none;
+  font-size:25px;
+  color:#818181;
+  display:block;
+  transition:.3s
+  }
+  
+  .sidenav-contact a:hover {
+  color:#f1f1f1
+  }
+  
+  .sidenav-contact .closebtn {
+  position:absolute;
+  top:0;
+  right:25px;
+  font-size:36px;
+  margin-left:50px
+  }
+  
+  #main {
+  transition:margin-left .5s;
+  padding:20px
+  }
+  
+  @media screen and (max-height: 450px) {
+  .sidenav-contact {
+  padding-top:15px
+  }
+  
+  .sidenav-contact a {
+  font-size:18px
+  }
+  }
+  
+  .contact-container {
+  margin:20px;
+  padding:1.5rem 0;
+  display:flex;
+  flex-direction:column
+  }
+  
+  input,textarea {
+  margin:5px;
+  border:none;
+  border-radius:.5rem;
+  padding:20px;
+  box-shadow:inset 5px 4px 9px 2px rgba(51,51,51,0.192);
+  width:100%;
+  box-sizing:border-box
+  }
+  
+  form a {
+  background-image:linear-gradient(to right,var(--primary-color),var(--secondary-color));
+  color:var(--bg-color);
+  padding:5px;
+  border-radius:.5rem;
+  box-shadow:5px 4px 9px 2px rgba(51,51,51,0.192)
+  }
+  
+  form a:hover {
+  transform:scale(0.9);
+  background-image:linear-gradient(to right,var(--secondary-color),var(--primary-color))
+  }
+  
+  .submit-btn {
+  margin:5px;
+  color:var(--bg-color)!important;
+  font-size:12px!important;
+  padding:10px 20px!important;
+  width:50%;
+  text-align:center;
+  justify-content:center
+  }
+  
+  @media screen and (max-width: 768px) {
+  input,textarea {
+  width:93%
+  }
+  }

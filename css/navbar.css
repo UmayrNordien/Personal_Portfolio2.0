@@ -1,69 +1,64 @@
-/* Style the links inside the sidenav */
 #mySidenav a {
-    display: inline-flex;
-    margin-top: 16vh;
-    position: fixed; /* Position them relative to the browser window */
-    left: -95px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 10px; /* 15px padding */
-    width: 140px; /* Set a specific width */
-    font-size: 20px; /* Increase font size */
-    font-weight: 600;
-    color: #252525; /* White text color */
-    border-radius: 0.5rem;
-    box-shadow: 5px 4px 9px 2px rgba(51, 51, 51, 0.096);
-    /* box-shadow: 4px 4px 25px rgba(51, 51, 51, 0.096); */
-    z-index: 2;
+  display:inline-flex;
+  margin-top:16vh;
+  position:fixed;
+  left:-95px;
+  transition:.3s;
+  padding:10px;
+  width:140px;
+  font-size:20px;
+  font-weight:600;
+  color:#252525;
+  border-radius:.5rem;
+  box-shadow:5px 4px 9px 2px rgba(51,51,51,0.096);
+  z-index:2
   }
   
   #mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
+  left:0
   }
-
+  
   #mySidenav i {
-    padding-left: 10px;
-    padding-right: 10px !important;
+  padding-left:10px;
+  padding-right:10px!important
   }
-
-  /* The about link: 20px from the top with a green background */
-  /* Colors used - Purple Skies https://colorkit.co/palette/cac7ff-d7cdfe-e4d3fc-f1dafb-fee0f9/ */
+  
   #landingc {
-    /* top: 20px; */
-    background-color: var(--nav-color-1);
+  background-color:var(--nav-color-1)
   }
-
+  
   #aboutc {
-    top: 70px;
-    background-color: var(--nav-color-2);
+  top:70px;
+  background-color:var(--nav-color-2)
   }
   
   #resumec {
-    top: 130px;
-    background-color: var(--nav-color-3); 
+  top:130px;
+  background-color:var(--nav-color-3)
   }
   
   #skillsc {
-    top: 190px;
-    background-color: var(--nav-color-4); 
+  top:190px;
+  background-color:var(--nav-color-4)
   }
-
+  
   #projectsc {
-    top: 250px;
-    background-color: var(--nav-color-5); 
+  top:250px;
+  background-color:var(--nav-color-5)
   }
-
+  
   #testimonialsc {
-    top: 310px;
-    background-color: var(--nav-color-6); 
+  top:310px;
+  background-color:var(--nav-color-6)
   }
   
   #contactc {
-    top: 370px;
-    background-color: var(--nav-color-7); 
+  top:370px;
+  background-color:var(--nav-color-7)
   }
-
+  
   @media screen and (max-width: 767px) {
-    #mySidenav a  {
-      margin-top: 71px; /* previously 75px */
-    }
+  #mySidenav a {
+  margin-top:71px
+  }
   }

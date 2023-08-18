@@ -37,7 +37,6 @@
 
     <!--Css-->
     <link rel="stylesheet" href="./css/global_css/global.css">
-    
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/landing.css">
     <link rel="stylesheet" href="./css/about.css">
@@ -48,9 +47,6 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
 
-    <!-- SweetAlert2 -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">  -->
-    <!--Scroll library-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--Icons-->
@@ -60,9 +56,6 @@
 
     <title>U Nordien's Portfolio</title>
 
-    <style>
-        /* Styling here */
-    </style>
 </head>
 
 <body>
@@ -117,8 +110,7 @@
         data-aos-mirror="true" 
         data-aos-once="false">
             <span>
-                <img src="https://i.postimg.cc/gjXf5CXx/Profile-image-modified.png"
-                    alt="Landing Profile Image">
+                <img src="https://i.postimg.cc/gjXf5CXx/Profile-image-modified.png" alt="Landing Profile Image" loading="lazy">
             </span>
         </div>
 
@@ -137,7 +129,7 @@
             <p>Web Developer · UI/UX · SEO</p>
 
             <!--BUTTONS-->
-            <a href="https://drive.google.com/file/d/1n8IGMr_rBBBFJftsdy_-E8-yN5n-_3RQ/view?usp=sharing"
+            <a href="https://drive.google.com/file/d/11HAok0ezKiM2omXSDfPinshhD6pbpL6K/view?usp=sharing"
                 class="viewcv-btn">View CV
             </a>
         </div>
@@ -171,12 +163,26 @@
         <!-- /* Clearfix 2 */ -->
         <h4 class="mindset-h4" style="clear:right">My mindset and drive</h4>        
         <div class="clearfix2">
-          <img class="about-img2" src="https://i.postimg.cc/SxqFzd9Q/literallyme.png" alt="About Image 2" width="170" height="170">
+          <img class="about-img2" src="https://i.postimg.cc/SxqFzd9Q/literallyme.png" alt="About Me Image 2" width="170" height="170">
           <!-- <img class="about-img2" src="https://i.postimg.cc/dVnRjQhk/ryangosling.png" alt="About Image 2" width="170" height="170"> -->
           I demonstrate high ambition towards upskilling and developing everywhere as a individual religiously. 
           I challenge myself daily to accomplish what others refuse to do even if i don't feel like it. 
           I believe self belief and discipline trumps motivation and inspiration itself, 
           I simply get things done even if tasks come with extreme challenge.
+        </div>
+        <br>
+        <!-- /* Clearfix 3 */ -->
+        <h4 class="preference-h4" style="clear:right">My Preference</h4>        
+        <div class="clearfix3">
+          <img class="about-img3" src="https://i.postimg.cc/J7yTgRgg/preference-modified.png" alt="About Me Image 2" width="170" height="170">
+         I`ve got a foundational grip on a wide range of frontend tools, 
+         making it second nature for me to whip up engaging and visually appealing user experiences. 
+         From using HTML/CSS to structure and style content, to handling dynamic content through WordPress, 
+         and even creating simplistic interactive web apps with JavaScript, I've got these areas covered 
+         and continuinng to upskill in that area specifcially even though i would classify it as a weakpoint. 
+         I would say what really gives me an edge is my knack for design, honed through my time at the Frank Joubert Art School a long while back. 
+         With a background in photography, painting, and graphic design, I bring a fresh and artistic perspective to the table. 
+         This artistic edge doesn't just fuel creativity, it also helps me breeze through tasks with an instinctive grasp of design principles comfortably.
         </div>
     </section>
 
@@ -503,7 +509,7 @@
             <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for projects.." title="Type in a name"> -->
         </div>
 
-        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <!-- The filterable elements, some have multiple class names used for multiple catergories-->
         <!-- Projects -->
         <div class="project-container">
             <div class="filterDiv html-css-javascript">
@@ -600,7 +606,7 @@
                 <img src="https://i.postimg.cc/8CSHnhWc/mydashboard.png" class="projects-image" alt="Project Image">
                 <div class="project-info">
                     <h3>PHP Dashboard</h3>
-                    <p>In Development</p>
+                    <p>Dashboard Inventory Tools</p>
                     <div class="btn-container">
                         <a href="https://drive.google.com/file/d/1QTRbjdPsaivT9TeMmVQK7bHjqE20VUN8/view">
                             <button class="project-btn">Demo</button>
@@ -611,14 +617,29 @@
                     </div>
                 </div>
             </div>
-            <div class="filterDiv wordpress">
-                <img src="https://via.placeholder.com/300x200.png?text=Placeholder+Image" class="projects-image" alt="Project Image">
+            <div class="filterDiv html-css-javascript api">
+                <img src="https://i.postimg.cc/g0fLZ7Qj/movie-app.png" class="projects-image" alt="Project Image">
                 <div class="project-info">
-                    <h3>Lorem</h3>
-                    <p>In Development</p>
+                    <h3>TMDb Movie Rating App</h3>
+                    <p>AUTH FETCH, POST using TMDb API</p>
                     <div class="btn-container">
-                        <a href="">
-                            <button class="project-btn" disabled>N/A</button>
+                        <a href="https://myvuemovieapp.netlify.app/">
+                            <button class="project-btn">DEMO</button>
+                        </a>
+                        <a href="https://github.com/UmayrNordien/vue_movie_app.git">
+                            <button class="project-btn">CODE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv other">
+                <img src="https://i.postimg.cc/zfsrmyxt/Umayr-Nordien-Portfolio-Figma.png" class="projects-image" alt="Project Image">
+                <div class="project-info">
+                    <h3>Figma Portfolio</h3>
+                    <p>Appying Design Techniques</p>
+                    <div class="btn-container">
+                        <a href="https://www.figma.com/file/uGdeOBgb3hEkebJecqGX9e/Umayr-Nordien---Portfolio?type=design&node-id=0-1&mode=design&t=kZWs8PqWL1QBuTwQ-0">
+                            <button class="project-btn">LINK</button>
                         </a>
                         <a href="">
                             <button class="project-btn" disabled>N/A</button>
@@ -627,6 +648,21 @@
                 </div>
             </div>
             <div class="filterDiv api">
+                <img src="https://via.placeholder.com/300x200.png?text=Placeholder+Image" class="projects-image" alt="Project Image">
+                <div class="project-info">
+                    <h3>Lorem</h3>
+                    <p>In Development</p>
+                    <div class="btn-container">
+                        <a href="https://coinflipgamecounter.netlify.app">
+                            <button class="project-btn" disabled>N/A</button>
+                        </a>
+                        <a href="https://github.com/UmayrNordien/CoinFlipGame.git">
+                            <button class="project-btn" disabled>N/A</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv wordpress">
                 <img src="https://via.placeholder.com/300x200.png?text=Placeholder+Image" class="projects-image" alt="Project Image">
                 <div class="project-info">
                     <h3>Lorem</h3>
@@ -775,33 +811,20 @@
       </div>
     </section>
 
-    <!-- SweetAlert2 -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script> -->
     <!--Scroll library-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-          disable: 'mobile', // Disable AOS on mobile devices
-        });
-      </script>
+    <script>AOS.init({disable:"mobile"});</script>
       
-
     <!-- JavaScript -->
     <script src="./js/global_js/global.js"></script>
     <script src="./js/contact.js"></script>
     <script src="./js/resume.js"></script>
     <script src="./js/project.js"></script>
-    <!-- JavaScript imports-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <!--Google translate JS-->
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

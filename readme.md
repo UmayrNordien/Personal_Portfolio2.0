@@ -9,10 +9,9 @@ Thank you for taking the time to review my portfolio, and I look forward to disc
 Reach out via linkedin at https://www.linkedin.com/in/umayr-nordien-0b87b1263/
 
 CURRENTLY:
- 2023/06/05
--testimonial responsiveness where the height of the container for mobile view
- specifically took  up too much vertical height and the content p tags was stretched providing
- a poor user experience --COMPLETED
- 2023/07/05
--working on making the skills section responsive displaying 
- two languages for mobile view --IN PROGRESS
+-Learning about compressing and hosting files for import to reduce load times
+-At the moment just using standard compression methods removing backslases and spaces aswell as last semi colons which was prreviously a habit
+
+Tools used for this:
+-https://csscompressor.com/
+-https://jscompress.com/
