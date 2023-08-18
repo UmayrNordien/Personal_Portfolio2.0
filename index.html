@@ -46,7 +46,6 @@
     <link rel="stylesheet" href="./css/testimonials.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
-
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--Icons-->
@@ -131,7 +130,7 @@
             <!--BUTTONS-->
             <a href="https://drive.google.com/file/d/11HAok0ezKiM2omXSDfPinshhD6pbpL6K/view?usp=sharing"
                 class="viewcv-btn">View CV
-            </a>
+            </a>              
         </div>
     </section>
 
@@ -346,15 +345,16 @@
                         <span class="fa fa-star"></span>
                     </div>
                 </div>
-            
-            
+               
                 <div class="skills-box">
                     <div class="skills-title">
-                        <div class="skills-img">
-                            <img src="https://icon-library.net/images/javascript-icon-png/javascript-icon-png-23.jpg" alt="JavaScript logo"
+                        <a href=" https://alison.com/certification/check/$2y$10$PnMsG941opgePN4EncOMbxwVW8J4zd50q9u6rVtfiuDu4mma4e">
+                            <div class="skills-img">
+                                <img src="https://icon-library.net/images/javascript-icon-png/javascript-icon-png-23.jpg" alt="JavaScript logo"
                                 class="skills-icons">
-                        </div>
-                        <h4>JAVASCRIPT</h4>
+                            </div>
+                        </a>
+                        <a href=https://drive.google.com/file/d/1dG5PJJUde-i_9JU-FZU9Tfk9Z4KdonWv/view?usp=drive_link"><h4>JAVASCRIPT</h4></a>
                     </div>
                     <div class="star rating">
                         <span class="fa fa-star checked"></span>
@@ -468,7 +468,7 @@
                 </div>
                 <div class="skills-box">
                     <div class="skills-title">
-                        <a href="https://drive.google.com/file/d/1ymaX-j6P1eOYZPVmFVyERJEM27nC1Dbz/view">
+                        <a href="https://app-eu1.hubspot.com/academy/achievements/4jt83464/en/1/umayr-nordien/seo-ii">
                             <div class="skills-img">
                                 <img src="https://i.postimg.cc/RVwHhqNx/SEO-Logo.png" alt="SEO logo"
                                     class="skills-icons">
@@ -614,6 +614,7 @@
                         <a href="https://github.com/UmayrNordien/inventorymanagement.git">
                             <button class="project-btn">CODE</button>
                         </a>
+                        <button class="project-btn" onclick="phpDescription()">About</button>
                     </div>
                 </div>
             </div>
@@ -629,6 +630,7 @@
                         <a href="https://github.com/UmayrNordien/vue_movie_app.git">
                             <button class="project-btn">CODE</button>
                         </a>
+                        <button class="project-btn" onclick="TMDbDescription()">About</button>
                     </div>
                 </div>
             </div>
@@ -752,7 +754,7 @@
                     const testimonialCard = `
                             <div class="testimonial-card">
                                 <div class="testimonial-image">
-                                    <img src="${testimonial.image}" alt="${testimonial.name}'s Profile Image" />
+                                    <img src="${testimonial.image}" alt="${testimonial.name}'s Profile Image"/>
                                 </div>
                                 <h2>${testimonial.name}</h2>
                                 <h5><i class='bx bx-book-content'></i> ${testimonial.position}</h5>
@@ -771,7 +773,7 @@
         <div id="mySidenav-contact" class="sidenav-contact">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="contact-container w-75 mx-auto">
-            <h2 class="contact-title">Contact Us</h2>
+            <h2 class="contact-title">Contact Me</h2>
             <br>
             <form action="https://formspree.io/f/myyvjoyz" method="post">
               <div class="mb-3">
@@ -791,6 +793,7 @@
               <a type="submit" value="Submit" class="submit-btn">Submit
               </a>            
             </form>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="umayr-nordien-0b87b1263" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://za.linkedin.com/in/umayr-nordien-0b87b1263?trk=profile-badge">Umayr Nordien</a></div>
           </div>
         </div>
     </section>
@@ -811,20 +814,22 @@
       </div>
     </section>
 
+
     <!--Scroll library-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init({disable:"mobile"});</script>
-      
+    <!-- Other Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <!-- JavaScript -->
     <script src="./js/global_js/global.js"></script>
     <script src="./js/contact.js"></script>
     <script src="./js/resume.js"></script>
     <script src="./js/project.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <!--Google translate JS-->
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 </body>
 
 </html>

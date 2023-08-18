@@ -56,3 +56,40 @@ for (var i = 0; i < filterButtons.length; i++) {
     this.className += ' active';
   });
 }
+
+// Project About ALerts
+// PHP Dashboard
+function phpDescription() {
+  const description = `
+      PHP Dashboard:
+      This dashboard includes the following tools:
+      - Login and register functionality
+      - Inventory system
+      - Calendar
+      - String to binary converter
+      - Code editor (work in progress)
+  `;
+  
+  window.alert(description);
+}
+
+// Movie Rating App II
+function TMDbDescription() {
+  const description = `
+      TMDb Movie App:
+      The TMDb Movie App is a comprehensive movie management and exploration platform built using Vue.js and the TMDb API.
+      It offers the following features:
+      
+      - User Authentication: Secure user login functionality to access personalized movie data.
+      - Movie Dashboard: A dashboard that displays a collection of trending movies fetched from the TMDb API.
+      - Movie Details: Detailed information about individual movies, including posters, overviews, and ratings.
+      - Search Functionality: Search for movies using keywords and get instant results.
+      - User Ratings: Ability to rate movies and save user-specific ratings.
+      - Route Navigation: Smooth navigation between different app sections using Vue Router.
+      - Responsive Design: A responsive user interface that adapts to various screen sizes.
+      
+      Whether you want to discover trending movies, explore movie details, or rate your favorite films, the TMDb Movie App provides an immersive movie-watching experience.
+  `;
+  
+  window.alert(description);
+}

@@ -64,6 +64,11 @@
   width:100%;
   box-sizing:border-box
   }
+
+  input,textarea:focus{
+  border: none;
+  outline: none
+  }
   
   form a {
   background-image:linear-gradient(to right,var(--primary-color),var(--secondary-color));
