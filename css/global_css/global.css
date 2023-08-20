@@ -38,41 +38,41 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-color); /* minimalism */
-  border-radius: 20px
+  background:var(--bg-color); /* minimalism */
+  border-radius:20px
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
-  border-radius: 20px
+  background:var(--primary-color);
+  border-radius:20px
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-color)
+  background:var(--secondary-color)
 }
 
 /* Custom Text Selection */
 ::selection{
-  background-color: var(--secondary-color);
-  color: var(--primary-color)
+  background-color:var(--secondary-color);
+  color:var(--primary-color)
 }
 
 section {
   /* padding to all sections, clean minimalist look */
-  padding-top: 15px;
-  padding-right: 10%;
-  padding-bottom: 15px;
-  padding-left: 10%
+  padding-top:15px;
+  padding-right:10%;
+  padding-bottom:15px;
+  padding-left:10%
 }
 
 /* applying colors to section tags */
 section {
-  color: var(--text-color)
+  color:var(--text-color)
 }
 
 @media screen and (max-width: 767px) {
   section {
-    padding-left: 15%; /* accounts for the space required to see the content that the navbar blocks */
+    padding-left:15%; /* accounts for the space required to see the content that the navbar blocks */
   }
 }
 
