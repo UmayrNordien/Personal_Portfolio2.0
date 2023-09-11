@@ -1,17 +1,17 @@
-IN PROGRESS . . .
-Welcome to my updated personal portfolio v2. 
-This version features several improvements, including a fresh new minimalistic design and enhanced aesthetics. 
-I have also optimized the portfolio to showcase my skills, experience, and accomplishments in a more professional manner. 
-With this portfolio, I aim to showcase my capabilities and highlight my achievements in a clear and concise manner. 
+Umayr Nordien's Portfolio v2
+👋 Welcome to my updated personal portfolio v2! This version comes with several exciting improvements, including a fresh, minimalistic design and enhanced aesthetics. I have optimized the portfolio to present my skills, experience, and achievements in a more professional manner, with a focus on the courses and resources that have helped me along the way.
 
-Thank you for taking the time to review my portfolio, and I look forward to discussing potential opportunities with you.
+Objectives
+🚀 My primary goals with this portfolio are to:
 
-Reach out via linkedin at https://www.linkedin.com/in/umayr-nordien-0b87b1263/
+Showcase my capabilities and achievements clearly and concisely.
+Continuously enhance the user experience.
+Attract potential opportunities and collaborations.
+Portfolio Link
+🌐 Portfolio: Umayr Nordien's Portfolio
 
-CURRENTLY:
--Learning about compressing and hosting files for import to reduce load times
--At the moment just using standard compression methods removing backslases and spaces aswell as last semi colons which was prreviously a habit
+Contact Information
+📧 Feel free to reach out to me on LinkedIn: LinkedIn
 
-Tools used for this:
--https://csscompressor.com/
--https://jscompress.com/
+Current Task: Learning about MIME and Overcoming Tooltip Mobile View Errors
+📖 I'm currently diving into the world of MIME (Multipurpose Internet Mail Extensions) and working on overcoming tooltip mobile view errors. Stay tuned for updates as I tackle this challenge! 💪
