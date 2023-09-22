@@ -72,6 +72,19 @@ function phpDescription() {
   
   window.alert(description);
 }
+// Project About ALerts
+// PHP Dashboard
+function FourDI() {
+  const description = `
+      4DI Client Site:
+      -4Di Capital: Empowering African innovation for global impact.
+      Developed by LC Studio and Interns:
+      Brogan Gys,
+      Umayr Nordien
+  `;
+  
+  window.alert(description);
+}
 
 // Movie Rating App II
 function TMDbDescription() {
